@@ -11,6 +11,7 @@
     <packaging>jar</packaging>
 
     <properties>
+        <java.version>1.8</java.version>
         <junit.version>5.4.2</junit.version>
         <source.dir>${basedir}/src</source.dir>
         <test.dir>${basedir}/tst</test.dir>
@@ -38,6 +39,15 @@
         <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
 
         <plugins>
+           <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>3.8.1</version>
+              <configuration>
+                 <source>${java.version}</source>
+                 <target>${java.version}</target>
+              </configuration>
+           </plugin>
            <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-surefire-plugin</artifactId>

@@ -10,9 +10,9 @@ import javafx.stage.Stage;
 
 public class MainAppWindow extends Application
 {
-   private final static String WINDOW_TITLE = "Japanese puzzles solver";
-   private final static double WINDOW_WIDTH = 400;
-   private final static double WINDOW_HEIGHT = 350;
+   private static final String WINDOW_TITLE = "Japanese puzzles solver";
+   private static final double WINDOW_WIDTH = 400;
+   private static final double WINDOW_HEIGHT = 350;
    
    public static void main(String[] args)
    {
